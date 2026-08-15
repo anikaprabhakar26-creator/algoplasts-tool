@@ -122,8 +122,7 @@ if check:
             st.markdown('<div class="result-box" style="background-color:rgba(74,60,20,0.7); color:#FFD966;">⚠️ Partially Favorable — degradation occurs, but more slowly.</div>', unsafe_allow_html=True)
         else:
             st.markdown('<div class="result-box" style="background-color:rgba(74,30,30,0.7); color:#FF7C7C;">❌ Less Favorable — current conditions slow the process.</div>', unsafe_allow_html=True)
-
-       API_KEY = st.secrets["API_KEY"]
+        API_KEY = st.secrets["API_KEY"]
         suggestions = []
         if temp_score < 60:
             suggestions.append("🌡️ **Raise the temperature** — hydrolysis accelerates significantly above 25°C. Composting facilities or controlled warm storage could close this gap artificially.")
